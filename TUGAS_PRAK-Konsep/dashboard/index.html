@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peserta HIMA-CUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #003366;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        
+        /* Landing Header */
+        .landing-header {
+            background-color: #003366;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 4px solid #004080;
+            margin-bottom: 40px;
+            transition: background-color 0.3s ease;
+        }
+        .landing-header:hover {
+            background-color: #004080;
+        }
+        .landing-header h1 {
+            font-size: 3em;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .landing-header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .cta-button {
+            margin-top: 30px;
+            font-size: 1.2em;
+            padding: 10px 25px;
+            background-color: #ff9900;
+            border: none;
+            color: white;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e68900;
+        }
+
+        /* Content Wrapper */
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+        main {
+            flex: 3;
+        }
+        aside {
+            flex: 1;
+            background-color: #f1f4f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Info Section */
+        .info-section {
+            background-color: #ffffff;
+            border: 2px solid #003366;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .info-section:hover {
+            transform: translateY(-10px);
+        }
+        .info-section h2 {
+            color: #003366;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .info-section ul {
+            padding-left: 20px;
+        }
+        
+        /* Carousel */
+        .carousel-container img {
+            border-radius: 10px;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .cta-button {
+                font-size: 1em;
+                padding: 8px 20px;
+            }
+            .landing-header {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">HIMA-CUP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../authentication/login.html">Login Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Header -->
+    <header class="landing-header" id="home">
+        <h1>Pendaftaran Peserta HIMA-CUP</h1>
+        <p>Bergabunglah di HIMA-CUP dan tunjukkan kemampuan terbaik Anda dalam kompetisi olahraga bergengsi!</p>
+        <a href="form-pendaftaran.php" class="btn cta-button">Daftar Sekarang</a>
+    </header>
+
+    <div class="content-wrapper">
+        <main>
+            <!-- Informasi Lomba -->
+            <section class="info-section" id="about">
+                <h2>Informasi Lomba</h2>
+                <p>HIMA-CUP adalah kompetisi olahraga tahunan yang diadakan oleh Himpunan Mahasiswa. Acara ini terbuka untuk seluruh mahasiswa yang ingin menunjukkan kemampuan mereka di berbagai cabang olahraga.</p>
+            </section>
+
+            <!-- Persyaratan Pendaftaran -->
+            <section class="info-section">
+                <h2>Persyaratan Pendaftaran</h2>
+                <ul>
+                    <li>Mahasiswa aktif di universitas yang bersangkutan</li>
+                    <li>Usia maksimal 25 tahun</li>
+                    <li>Memiliki kondisi kesehatan prima</li>
+                    <li>Menyerahkan kartu identitas mahasiswa dan surat keterangan sehat</li>
+                </ul>
+            </section>
+
+            <!-- Jadwal dan Lokasi -->
+            <section class="info-section">
+                <h2>Jadwal dan Lokasi</h2>
+                <p>Event HIMA-CUP akan diselenggarakan pada tanggal 20-25 November 2024 di Stadion Kampus Universitas.</p>
+            </section>
+
+            <!-- Jenis Cabang Olahraga -->
+            <section class="info-section">
+                <h2>Jenis Cabang Olahraga</h2>
+                <ul>
+                    <li>Sepak Bola</li>
+                    <li>Basket</li>
+                    <li>Voli</li>
+                    <li>Tenis Meja</li>
+                    <li>Bulu Tangkis</li>
+                </ul>
+            </section>
+
+            <!-- Contact Us -->
+            <section class="info-section" id="contact">
+                <h2>Contact Us</h2>
+                <p>Untuk informasi lebih lanjut, Anda dapat menghubungi kami melalui:</p>
+                <p>WhatsApp: <a href="https://wa.me/6282362331622">082362331622</a></p>
+                <p>Email: <a href="mailto:anindia.atika@gmail.com">anindia.atika@gmail.com</a></p>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Galeri Olahraga</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/sepak bola.jpg" class="d-block w-100" alt="Sepak Bola">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/tenis meja.jpg" class="d-block w-100" alt="Tenis Meja">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/basket.jpg" class="d-block w-100" alt="Basket">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/voli.jpg" class="d-block w-100" alt="Voli">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/bulu tangkis.jpg" class="d-block w-100" alt="Bulu Tangkis">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HIMA-CUP. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

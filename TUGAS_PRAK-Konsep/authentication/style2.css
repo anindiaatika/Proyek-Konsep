@@ -1,0 +1,84 @@
+/* STYLE CSS UNTUK TAMPILAN LOGIN
+
+/* Reset Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #003366, #66b3ff); /* Gradasi biru */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #003366;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #003366;
+    border-radius: 6px;
+    background-color: #f4f4f9;
+    color: #003366;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #66b3ff;
+    box-shadow: 0 0 8px rgba(102, 179, 255, 0.5);
+}
+
+/* Button Styling */
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #003366, #0055aa);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-login:hover {
+    background: linear-gradient(135deg, #0055aa, #003366);
+    transform: translateY(-2px);
+}

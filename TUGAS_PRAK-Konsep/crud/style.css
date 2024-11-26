@@ -1,0 +1,222 @@
+/* STYLE CSS UNTUK TABEL DATABASE
+
+/* Reset margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9; /* Warna latar belakang terang */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff; /* Warna putih untuk kontainer */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk kedalaman */
+}
+
+/* Header Styling */
+h3 {
+    color: #003366; /* Biru gelap untuk heading */
+    text-align: center;
+    font-size: 32px; /* Ukuran font diperbesar untuk tampilan lebih jelas */
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Mengubah semua huruf menjadi kapital */
+    border-bottom: 3px solid #003366; /* Garis bawah untuk memberikan efek modern */
+    padding-bottom: 5px; /* Ruang tambahan di bawah teks agar lebih rapi */
+}
+
+
+/* Tabel Styling */
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #003366; /* Warna biru gelap untuk border */
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.table-container th {
+    background-color: #003366; /* Biru gelap untuk header */
+    color: white; /* Teks putih untuk header */
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f9f9f9; /* Latar belakang baris genap */
+}
+
+.table-container tr:nth-child(odd) {
+    background-color: #e6f2ff; /* Latar belakang baris ganjil dengan biru muda */
+}
+
+/* Tombol Styling */
+.btn {
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    width: auto; /* Tombol dengan lebar otomatis */
+    margin-right: 10px; /* Beri jarak antar tombol */
+}
+
+/* Tombol Utama */
+.btn-primary {
+    background-color: #003366; /* Biru gelap */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #002244; /* Biru lebih gelap saat hover */
+}
+
+/* Tombol Sukses */
+.btn-success {
+    background-color: #4CAF50; /* Hijau */
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #45a049; /* Hijau lebih gelap saat hover */
+}
+
+/* Tombol Edit */
+.btn-edit {
+    background-color: #6495ED; /* Biru terang */
+    color: white;
+    padding: 8px 16px; /* Samakan padding tombol */
+    border-radius: 3px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.btn-edit:hover {
+    background-color: #4169E1; /* Biru gelap saat hover */
+}
+
+/* Tombol Hapus */
+.btn-delete {
+    background-color: #FF6B6B; /* Merah */
+    color: white;
+    padding: 8px 16px; /* Samakan padding tombol */
+    border-radius: 3px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b; /* Merah lebih gelap saat hover */
+}
+
+/* Tombol Kembali */
+.btn-back {
+    background-color: #003366; /* Biru gelap, senada dengan tabel */
+    color: white; /* Teks putih */
+    padding: 8px 16px; /* Padding tombol */
+    border-radius: 4px;
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: bold;
+    display: inline-block; /* Supaya tombol berbentuk kotak */
+    margin: 10px 0; /* Jarak tombol dari elemen lain */
+    text-align: center;
+}
+
+.btn-back:hover {
+    background-color: #002244; /* Biru lebih gelap saat hover */
+    color: white;
+}
+
+
+/* Responsif Styling */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Lebar container lebih kecil pada perangkat kecil */
+    }
+
+    .table-container table {
+        font-size: 12px; /* Ukuran font lebih kecil */
+    }
+
+    .table-container th, .table-container td {
+        padding: 8px; /* Padding lebih kecil */
+    }
+
+    .btn {
+        font-size: 12px; /* Ukuran font tombol lebih kecil */
+        padding: 6px 12px; /* Padding lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .table-container th, .table-container td {
+        padding: 6px; /* Padding lebih kecil untuk perangkat kecil */
+    }
+
+    .btn {
+        font-size: 10px; /* Ukuran font tombol lebih kecil */
+        padding: 4px 10px; /* Padding lebih kecil */
+    }
+
+    h3 {
+        font-size: 20px; /* Ukuran font heading lebih kecil untuk perangkat kecil */
+    }
+}
+
+
+
+/* Pagination Styling */
+.pagination {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #003366;
+    border: 2px solid #003366;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: #003366;
+    color: white;
+}
+
+.pagination-btn.active {
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination-btn.previous,
+.pagination-btn.next {
+    background-color: #FFB6C1;
+    color: #003366;
+}
+
+.pagination-btn.previous:hover,
+.pagination-btn.next:hover {
+    background-color: #D8B2D1;
+    color: white;
+}
+
+
